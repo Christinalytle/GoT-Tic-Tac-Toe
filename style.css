@@ -6,7 +6,7 @@ body {
   background: url(sources/background2.jpeg);
   background-repeat: no-repeat; 
   background-size: cover;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 #header {
@@ -137,3 +137,6 @@ p {
   display: none; 
 }
 
+#whosTurn p {
+  color: black; 
+}

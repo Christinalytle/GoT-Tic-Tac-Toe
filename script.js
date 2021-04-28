@@ -22,10 +22,10 @@ playerDragon.turn = Math.random() > 0.5;
 // Show picture of who goes first  
 if (playerDragon.turn == true) {
     console.log("Player X Turn")
-    $('#dragonHeader').html('<img src="sources/dragon2.png" alt="dragon" id="dragonHeader"/> <p>Dragon Turn</p>');
+    $('#whosTurn').html('<img src="sources/dragon2.png" height="100px" width="100px" alt="dragon" id="dragonHeader"/> <p>Dragon Turn</p>');
 } else {
     console.log("Player O turn")
-    $('#walkerHeader').html('<img src="sources/whitewalker.jpg" alt="dragon" id="walkerHeader"/> <p>White Walker Turn</p>'); 
+    $('#whosTurn').html('<img src="sources/whitewalker.jpg" height="100px" width="100px" alt="dragon" id="walkerHeader"/> <p>White Walker Turn</p>'); 
 } 
 
 
@@ -290,13 +290,13 @@ function switchTurns(player1, player2) {  //switch players after each button cli
 }
 
 function showDragonTurn() { //shows Dragon's Turn picture
-    $('#dragonHeader').html('<img src="sources/dragon2.png" alt="dragon" id="dragonHeader"/> <p>Dragon Turn</p>');
-    $('#walkerHeader').html(''); 
+    $('#whosTurn').html('<img src="sources/dragon2.png" height="100px" width="100px" alt="dragon" id="dragonHeader"/> <p>Dragon Turn</p>');
+    // $('#walkerHeader').html(''); 
 }
 
 function showWhiteWalkerTurn() { //shows White Walker's Turn picture 
-    $('#walkerHeader').html('<img src="sources/whitewalker.jpg" alt="dragon" id="walkerHeader"/> <p>White Walker Turn</p>'); 
-    $('#dragonHeader').html('');  
+    $('#whosTurn').html('<img src="sources/whitewalker.jpg" height="100px" width="100px" alt="dragon" id="walkerHeader"/> <p>White Walker Turn</p>'); 
+    // $('#dragonHeader').html('');  
 }
 
 
@@ -347,10 +347,10 @@ $('#reset').on('click', function ()  {  //resets game when button clicked
     playerDragon.turn = Math.random() > 0.5; 
     if (playerDragon.turn == true) {
         console.log("Player X Turn")
-        $('#dragonHeader').html('<img src="sources/dragon2.png" alt="dragon" id="dragonHeader"/> <p>Dragon Turn</p>');
+        $('#whosTurn').html('<img src="sources/dragon2.png" height="100px" width="100px" alt="dragon" id="dragonHeader"/> <p>Dragon Turn</p>');
     } else {
         console.log("Player O turn")
-        $('#walkerHeader').html('<img src="sources/whitewalker.jpg" alt="dragon" id="walkerHeader"/> <p>White Walker Turn</p>'); 
+        $('#whosTurn').html('<img src="sources/whitewalker.jpg" height="100px" width="100px" alt="dragon" id="walkerHeader"/> <p>White Walker Turn</p>'); 
     } 
     $('#dragonWonImage').fadeOut(300);
     $('#whiteWalkerWonImage').fadeOut(300);
